@@ -1,0 +1,508 @@
+body{
+  overflow-x: hidden;
+  position: relative;
+  max-height: 100vh;
+  width: 100%;
+}
+
+
+/* 공통영역 */
+
+h1, h2{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  list-style-type: none;
+}
+
+
+.sectiontitle{
+  font-family: 'yg-jalnan';
+  font-size: 40px;
+  color: #ebac60;
+}
+
+.sectiontitle2{
+  font-family: 'yg-jalnan';
+  font-size: 40px;
+  color: #1c2b59;
+}
+
+
+/* header 영역 */
+header{
+  width: 100vw;
+  max-width: 100%;
+  height: 90px;
+  background: #1c2b59;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+header h1{
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  line-height: 80px;
+  text-align: center;
+  background: url(../images/camera.svg) no-repeat center;
+  background-size: 80px;
+  padding: 15px;
+}
+
+header .gnb{
+  width: 100%;
+  background: #141414;
+}
+
+
+header .gnb h2{
+  background: url(../images/hamberger.svg) no-repeat;
+  width: 35px;
+  height: 35px;  
+  text-indent: -9999px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+}
+
+header .gnb ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+header .gnb ul li{
+  padding: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+}
+
+header .gnb ul li a{
+  color: #fff;
+}
+
+
+
+/* 인트로 - 메인 시작*/
+main{
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+main .mainimg{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  margin: auto;
+  background: linear-gradient(0deg, #1c2b59 50%, #fff 50%)
+}
+
+main .mainimg img{
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+main .mainimg .title{
+  font-size: 60px;
+  text-align: center;
+  line-height: 80px;
+  font-family: 'yg-jalnan';
+  color: #1c2b59;
+}
+
+main .mainimg .textbox{
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+
+main .mainimg .textbox p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+main .mainimg .textbox p strong{
+  color: #ebac60;
+}
+
+/* top 버튼 */
+main #topBtn{
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+main #topBtn .top{
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 0px;
+  background: #15a1ff;
+  z-index: 9999;
+  border: none;
+  border-radius: 40px;
+}
+
+main #topBtn .top a{
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 70px;
+  font-family: 'gmarketsansmedium';
+  color: #fff;
+}
+
+
+
+/* 가격표 */
+#menu{
+  width: 100%;
+  margin-top: 100px;
+}
+
+#menu .textbox{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#menu .textbox table{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border: 1px solid #eee;
+}
+
+#menu .textbox table thead th{
+  padding: 10px;
+  font-size: 25px;
+  background: #1c2b59;
+  color: #fff;
+  height: 50px;
+  border: none;
+}
+
+#menu .textbox table tbody tr td{
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+#menu .textbox table tbody tr .subtitle{
+  background: #304a9b;
+  color: #fff;
+  border: none;
+}
+
+#menu .textbox table tbody tr .price{
+  font-weight: bold;
+}
+
+/* 접수방법 */
+
+#guide{
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  background: #1c2b59;
+}
+
+#guide .guidebox{
+  width: 100%;
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+
+#guide .guidebox .guidestep{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+#guide .guidebox .guidestep ul{
+  margin-top: 50px;
+  height: 100%;
+  background: #fff;
+  padding: 0;
+  text-align: left;
+}
+
+#guide .guidebox .guidestep ul li{
+  padding: 20px;
+}
+
+/* 오시는길 */
+#map{
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#map .mapbox{
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+}
+
+#map .mapbox .sectiontitle{
+  max-width: 100vw;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#map .mapbox .mapapi{
+  width: 80vw;
+  max-width: 100%;
+  height: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#map .mapbox .infobox{
+  padding-top: 50px;
+  display: flex;
+  max-width: 100vw;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#map .mapbox .infobox .info01, .info02{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+#map .mapbox .infobox ul{
+  margin: 0;
+  padding: 0;
+}
+
+#map .mapbox .infobox ul li{
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* 접수신청 */
+
+#addfriend{
+  background-color: #304a9b;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+#addfriend .sectiontitle2{
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  max-width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+/* 친구추가 */
+#addfriend .emartlink{
+  max-width: 80vw;
+  width: 100%;
+  margin: auto;
+}
+
+#addfriend p{
+  color: #fff;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#addfriend .emartlink ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 50px;
+  max-width: 100vw;
+  width: 100%;
+}
+
+#addfriend .emartlink ul li{
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#addfriend .emartlink ul li button{
+  background: #ffff00;
+  border: none;
+  width: 95%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#addfriend .emartlink ul li button a{
+  color: #000000;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+
+/* 팝업 */
+#addfriend .pop_wrap{
+  max-width: 100vw;
+  width: 100%;
+  max-height: 100vh;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#addfriend .pop_wrap .qrPage{
+  max-width: 100vw;
+  width: 600px;
+  max-height: 100vh;
+  height: 800px;
+  margin: auto;
+  margin-top: 60px;
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+
+
+#addfriend .pop_wrap .close{
+  max-width: 100vw;
+  width: 600px;
+  height: 50px;
+  margin: auto;
+}
+
+#addfriend .pop_wrap .qrPage button{
+  max-width: 100vw;
+  width: 600px;
+  height: 50px;
+  margin: auto;
+  background: #304a9b;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0;
+  position: relative;
+  bottom: 7px;
+}
+
+
+/* footer */
+#footer{
+  background: #141414;
+  color: #fff;
+  padding: 50px;
+  position: relative;
+  z-index: -9999;
+  clear: both;
+}
+
+#footer .footerinfo{
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+   /* top 버튼 */
+   #topBtn{
+    border: 1px solid red;
+    max-width: 100vw;
+    width: 100%;
+    
+  }
+
+  /* infobox */
+  #map .mapbox .infobox{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #map .mapbox .infobox .info01, .info02{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #map .mapbox .infobox .info01 ul{
+    border-bottom: 1px solid #000;
+  }
+
+  #map .mapbox .infobox .info01 h2{
+    margin-bottom: 30px;
+  }
+
+  #map .mapbox .infobox .info02{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #map .mapbox .infobox .info02 h2{
+    margin-bottom: 30px;
+  }
+
+  /* 링크영역 */
+  .emartlink{
+      max-width: 100vw;
+      width: 100%;
+  }
+
+  .emartlink ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .emartlink ul li{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .emartlink ul li button{
+    border: 1px solid white;
+    width: 50%;
+  }
+
+}
