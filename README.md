@@ -19,5 +19,11 @@
     2. PC버전으로 친구 추가 시 "팝업을 통한 QR인증이 아닌 별도의 방법" 찾아보기
     3. 영어버전 페이지 구축
 
+
+### ⚙Use Stack⚙
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=ffffff"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=ffffff"/> 
+<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat&logo=JAVASCRIPT&logoColor=141414"/> <img src="https://img.shields.io/badge/NETLIFY-00C7B7?style=flat&logo=NETLIFY&logoColor=ffffff"/>  
+<img src="https://img.shields.io/badge/FONTAWESOME-528DD7?style=flat&logo=FONTAWESOME&logoColor=ffffff"/>  
 </div>
 
