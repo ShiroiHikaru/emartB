@@ -123,6 +123,8 @@ main .mainimg .title{
   line-height: 80px;
   font-family: 'yg-jalnan';
   color: #1c2b59;
+  animation-duration: 3s;
+  animation-name: toptothebottom;
 }
 
 main .mainimg .textbox{
@@ -159,6 +161,7 @@ main #topBtn .top{
   z-index: 9999;
   border: none;
   border-radius: 40px;
+
 }
 
 main #topBtn .top a{
@@ -442,14 +445,50 @@ main #topBtn .top a{
   text-align: center;
 }
 
+/* animation */
+@keyframes toptothebottom {
+  from{
+  }
+  to{
+    display: block;
+
+  }
+}
+
 
 @media screen and (max-width: 768px){
+
+  main .mainimg .title{
+    margin-top: 150px;
+  }
+
    /* top 버튼 */
-   #topBtn{
-    border: 1px solid red;
+  main #topBtn{
     max-width: 100vw;
     width: 100%;
-    
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+  }
+
+  main #topBtn .top{
+    background: #15a1ff;
+    max-width: 100vw;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px;
+    line-height: 25px;
+  }
+
+  main #topBtn .top a{
+    display: block;
+    width: 100%;
+    line-height: 55px;
   }
 
   /* infobox */
@@ -503,6 +542,11 @@ main #topBtn .top a{
   .emartlink ul li button{
     border: 1px solid white;
     width: 50%;
+  }
+
+  /* footer */
+  #footer .footerinfo{
+    margin-bottom: 50px;
   }
 
 }
