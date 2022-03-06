@@ -544,6 +544,10 @@ main #topBtn .top a{
     width: 50%;
   }
 
+  .emartlink ul li button a{
+    color: #000000;
+  }
+
   /* footer */
   #footer .footerinfo{
     margin-bottom: 50px;
