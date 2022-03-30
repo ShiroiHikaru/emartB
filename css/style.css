@@ -613,6 +613,10 @@ main .intro .mission .textbox span{
 
 
 @media screen and (max-width: 768px){
+  header .gnb{
+    width: 100%;
+    max-width: 100vw;
+  }
 
   main .mainimg .title{
     margin-top: 150px;
