@@ -41,3 +41,25 @@ function modalClose(){
 //팝업 열림, 닫힘
 document.querySelector('#popImg').addEventListener('click', modalOpen);
 document.querySelector('#closeBtn').addEventListener('click', modalClose);
+
+
+
+// 슬라이드
+let SlideIndex = 0;
+showSlide();
+
+function showSlide(){
+   let i;
+   let slides = document.getElementsByClassName('slider__item');
+   let dotte = document.getElementsByClassName('dot');
+   for(i=0; i < slides.length; i++){
+      slides[i].style.display = 'none';
+   }
+   SlideIndex++;
+   if(SlideIndex > slides.length){SlideIndex = 1}
+   for(i = 0; i < dotte.length; i++){
+      dotte[i].className = dotte[i].className.replace('active', '');
+   }
+   slides[SlideIndex-1].style.display='block';
+   setTimeout(showSlide, 3000);
+}
